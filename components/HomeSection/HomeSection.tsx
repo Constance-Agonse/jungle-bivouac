@@ -1,18 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import Marquee from "react-double-marquee";
 
 export const HomeSection = () => {
-  const movingText = useRef(null);
-
-  useEffect(() => {
-    let position = 0;
-    if (movingText.current) {
-      setInterval(() => {
-        position += 1;
-        movingText.current.style.transform = `translate(-${position}px, 0px)`
-      }, 10)
-    }
-  }, [])
-
   return (
     <div className="HomeSection">
       <div className="HomeSection__image">
@@ -32,9 +21,11 @@ export const HomeSection = () => {
           </div>
         </div>
       </div>
-      <div className="HomeSection__moving-text" ref={movingText}>
-        Mini bivouac entre amis du vendredi 27 au dimanche 29 août. Evènement
-        top secret réservé aux copains.
+      <div className="HomeSection__moving-text">
+        <Marquee direction="left">
+          Mini bivouac entre amis du vendredi 27 au dimanche 29 août. Evènement
+          top secret réservé aux copains.
+        </Marquee>
       </div>
     </div>
   );
