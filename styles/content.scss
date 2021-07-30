@@ -4,7 +4,8 @@
 }
 
 .ContentSection__tree {
-  width: 1024px;
+  width: 80%;
+  padding-top: 64px;
   display: flex;
   flex-direction: column;
 }
@@ -13,20 +14,34 @@
   width: 50%;
   border-radius: 2px;
   animation: gradient 10s ease infinite;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #122b9c, #17883c, #1d4a5a, #83c7b7);
   background-size: 400% 400%;
+  box-sizing: border-box;
+  padding: 32px;
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  margin-bottom: 8px;
 }
 
 .ContentSection__leaf--left {
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
   align-self: flex-start;
+  transform: translate(4px, 0);
 }
 
 .ContentSection__leaf--right {
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
   align-self: flex-end;
+  transform: translate(-4px, 0);
 }
 
 @keyframes gradient {
