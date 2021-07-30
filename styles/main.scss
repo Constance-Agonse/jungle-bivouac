@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.HomeSection {
+  height: 100vh;
+  background: linear-gradient(180deg, #baced6 0%, #ba9d67 100%);
+  position: relative;
+}
+
+.HomeSection__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.HomeSection__image__bg {
+  width: 1024px;
+  height: 700px;
+  background-image: url(/assets/logo-img.jpeg);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeSection__image__logo__title {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 100.5%;
+  /* identical to box height, or 121px */
+
+  display: flex;
+  align-items: center;
+
+  color: #feffd7;
+}
+
+.HomeSection__image__logo__subtitle__item {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.045em;
+
+  color: #feffd7;
+
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.HomeSection__image__logo__subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.HomeSection__moving-text {
+  position: absolute;
+  bottom: 0;
+  font-family: Bebas Neue;
+  font-size: 66px;
+  letter-spacing: 0.045em;
+  color: #feffd7;
+  white-space: nowrap;
+  line-height: 39px;
+}
