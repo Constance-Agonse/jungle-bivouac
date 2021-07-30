@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 
+
+@keyframes gradient {
+  // 0% {
+  //   background-position: 0% 50%;
+  // }
+  // 50% {
+  //   background-position: 100% 50%;
+  // }
+  // 100% {
+  //   background-position: 0% 50%;
+  // }
+}
+
 @mixin for-phone-only {
   @media (max-width: 599px) {
     @content;
@@ -179,18 +192,6 @@
   font-size: 100px;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 // =================== TopMenu ===================
 .TopMenu {
   z-index: 1;
@@ -198,6 +199,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  &.TopMenu--content {
+    .TopMenu__item {
+      color: #363636;
+    }
+  }
 }
 
 .TopMenu__inner {
@@ -216,13 +222,13 @@
   cursor: pointer;
   transition: opacity ease-in-out 200ms;
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.045em;
-
+  transition: color ease-in-out 500ms;
   color: #ffffff;
   &:last-child {
     margin-right: 0;
