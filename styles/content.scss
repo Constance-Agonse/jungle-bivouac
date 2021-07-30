@@ -46,24 +46,30 @@
 
 .ContentSection__leaf--quand {
   width: 70%;
-  animation: gradient 15s ease infinite;
   background: linear-gradient(-45deg, #122b9c, #5c976f, #0b6080, #83c7b7);
   background-size: 400% 400%;
-  border-bottom-left-radius: 110px;
+  border-top-right-radius: 220px;
+  border-bottom-left-radius: 130px;
+  padding-top: 43px;
 }
 
 .ContentSection__leaf--ou {
   width: 100%;
-  animation: gradient 10s ease infinite;
   background: linear-gradient(-45deg, #af05c5, #281788, #c40a0a, #8d83c7);
   background-size: 400% 400%;
+  border-top-left-radius: 159px;
+  border-bottom-right-radius: 230px;
+  padding-left: 83px;
 }
 
 .ContentSection__leaf--comment {
   width: 100%;
-  animation: gradient 6s ease infinite;
   background: linear-gradient(-45deg, #122b9c, #17883c, #1d4a5a, #83c7b7);
   background-size: 400% 400%;
+  border-top-right-radius: 217px;
+  border-bottom-left-radius: 206px;
+  transform: translate(4px, -35px);
+  padding-top: 45px;
 }
 
 .ContentSection__leaf--left {
