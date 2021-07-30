@@ -1,6 +1,7 @@
 .ContentSection {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ContentSection__tree {
@@ -10,12 +11,24 @@
   flex-direction: column;
 }
 
-.ContentSection__leaf {
+.ContentSection__leaf-container {
   width: 50%;
-  border-radius: 2px;
-  animation: gradient 10s ease infinite;
-  background: linear-gradient(-45deg, #122b9c, #17883c, #1d4a5a, #83c7b7);
-  background-size: 400% 400%;
+}
+
+.ContentSection__leaf-container--left {
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-end;
+}
+.ContentSection__leaf-container--right {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ContentSection__leaf {
+  width: 100%;
+  border-radius: 4px;
   box-sizing: border-box;
   padding: 32px;
   h2 {
@@ -30,17 +43,36 @@
   margin-bottom: 8px;
 }
 
+.ContentSection__leaf--quand {
+  width: 70%;
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #122b9c, #5c976f, #0b6080, #83c7b7);
+  background-size: 400% 400%;
+}
+
+.ContentSection__leaf--ou {
+  width: 100%;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-45deg, #af05c5, #281788, #c40a0a, #8d83c7);
+  background-size: 400% 400%;
+}
+
+.ContentSection__leaf--comment {
+  width: 100%;
+  animation: gradient 6s ease infinite;
+  background: linear-gradient(-45deg, #122b9c, #17883c, #1d4a5a, #83c7b7);
+  background-size: 400% 400%;
+}
+
 .ContentSection__leaf--left {
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
-  align-self: flex-start;
   transform: translate(4px, 0);
 }
 
 .ContentSection__leaf--right {
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  align-self: flex-end;
   transform: translate(-4px, 0);
 }
 
@@ -54,4 +86,17 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.ContentSection__running-text {
+  font-family: Lato;
+  font-size: 40px;
+  letter-spacing: 0.045em;
+  color: #feffd7;
+  background-color: #000;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 32px;
 }
