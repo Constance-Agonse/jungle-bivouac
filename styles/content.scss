@@ -1,3 +1,15 @@
+@mixin small {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
 .ContentSection {
   display: flex;
   align-items: center;
@@ -10,10 +22,22 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
+  @include small {
+    width: 100%;
+    margin: 0 16px;
+    padding-top: 16px;
+  }
 }
 
 .ContentSection__leaf-container {
   width: 50%;
+  @include small {
+    width: 100%;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .ContentSection__leaf-container--left {
@@ -42,6 +66,29 @@
     }
   }
   margin-bottom: -100px;
+  @include small {
+    padding: 16px;
+    margin: 0 8px;
+    margin-bottom: 0;
+  }
+}
+
+.ContentSection__leaf--left {
+  border-top-right-radius: 160px;
+  border-bottom-left-radius: 160px;
+  transform: translate(4px, 0);
+  @include small {
+    transform: translate(0, 0);
+  }
+}
+
+.ContentSection__leaf--right {
+  border-top-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  transform: translate(-4px, 0);
+  @include small {
+    transform: translate(0, 0);
+  }
 }
 
 .ContentSection__leaf--quand {
@@ -51,6 +98,13 @@
   border-top-right-radius: 220px;
   border-bottom-left-radius: 130px;
   padding-top: 43px;
+  @include small {
+    padding: 16px;
+    margin-bottom: 0;
+    width: 100%;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 40px;
+  }
 }
 
 .ContentSection__leaf--ou {
@@ -60,6 +114,13 @@
   border-top-left-radius: 159px;
   border-bottom-right-radius: 230px;
   padding-left: 83px;
+  @include small {
+    padding: 16px;
+    margin-bottom: 0;
+    width: 100%;
+    border-top-left-radius: 39px;
+    border-bottom-right-radius: 110px;
+  }
 }
 
 .ContentSection__leaf--comment {
@@ -70,18 +131,12 @@
   border-bottom-left-radius: 206px;
   transform: translate(4px, -35px);
   padding-top: 45px;
-}
-
-.ContentSection__leaf--left {
-  border-top-right-radius: 160px;
-  border-bottom-left-radius: 160px;
-  transform: translate(4px, 0);
-}
-
-.ContentSection__leaf--right {
-  border-top-left-radius: 160px;
-  border-bottom-right-radius: 160px;
-  transform: translate(-4px, 0);
+  @include small {
+    padding: 16px;
+    transform: translate(0, 0);
+    border-top-right-radius: 137px;
+    border-bottom-left-radius: 116px;
+  }
 }
 
 .ContentSection__running-text {
