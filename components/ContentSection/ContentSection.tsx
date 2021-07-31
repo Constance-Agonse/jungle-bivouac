@@ -17,13 +17,11 @@ export const ContentSection = () => {
             <h2>Où?</h2>
             <p>
               Sur le terrain du grand-père de Cléo, un terrain de plusieurs
-              hectares où on peut mettre nos tentes, de la musique, des feux de
-              camps. Il est situé à 5 minutes à pied du joli lac du Bourdon où
-              on pourra se baigner.
+              hectares situé à 5 minutes à pied du joli lac du Bourdon.
             </p>
             <p>
               L'adresse la plus précise pour google maps est le camping La
-              Calanque, Saint-Fargeau. A deux heures de Paris en voiture.
+              Calanque, Saint-Fargeau.
             </p>
             <p>A deux heures de Paris en voiture.</p>
           </div>
