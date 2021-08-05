@@ -3,6 +3,7 @@ import '../styles/main.scss';
 import '../styles/content.scss';
 import '../styles/typo.scss';
 import '../styles/menu.scss';
+import '../styles/explanation.scss';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
