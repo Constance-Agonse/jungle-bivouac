@@ -22,7 +22,7 @@ export const ExplanationSection = () => {
           </div>
         </div>
 
-        <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--right">
+        <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--right">          
           <div className="ExplanationSection__leaf ExplanationSection__leaf--right ExplanationSection__leaf--surtout">
             <img
               src="/assets/tigre.png"
