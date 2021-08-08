@@ -129,8 +129,8 @@
   );
   border-radius: 326.959px 4px;
   padding-left: 83px;
-  padding-top: 100px;
-  padding-bottom: 180px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   width: calc(100% + 192px);
   transform: translate(-220px, -100px);
   flex-shrink: 0;
@@ -159,7 +159,7 @@
 }
 
 .ExplanationSection__leaf--surtout h2 {
-  margin-left: 160px;
+  margin-left: 230px;
   margin-bottom: 40px;
 
   @include small {
@@ -177,9 +177,10 @@
   );
   border-radius: 4px 267.5px;
   padding-bottom: 100px;
-  transform: translate(0, -145px);
+  transform: translate(0, -168px);
   padding-top: 45px;
   flex-shrink: 0;
+  z-index: -1;
 
   @include small {
     padding: 24px;
