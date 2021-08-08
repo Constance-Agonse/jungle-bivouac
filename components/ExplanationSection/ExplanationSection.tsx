@@ -8,21 +8,26 @@ export const ExplanationSection = () => {
       <div className="ExplanationSection__tree">
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--que-prendre">
+            <img
+              src="/assets/monkey1.png"
+              className="ExplanationSection__leaf--que-prendre__monkey"
+              alt=""
+            />
             <h2>Que prendre avec vous?</h2>
             <ul>
-              <li>sac de couchage</li>
-              <li>tente</li>
-              <li>affaires chaudes</li>
-              <li>maillot de bain</li>
-              <li>vos habits de lumière</li>
-              <li>écocup et paire de couverts</li>
-              <li>batteries externes pour téléphones</li>
-              <li>votre glacière pour les bières</li>
+              <li>Sac de couchage</li>
+              <li>Tente</li>
+              <li>Affaires chaudes</li>
+              <li>Maillot de bain</li>
+              <li>Vos habits de lumière</li>
+              <li>Écocup et paire de couverts</li>
+              <li>Batteries externes pour téléphones</li>
+              <li>Votre glacière pour les bières</li>
             </ul>
           </div>
         </div>
 
-        <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--right">          
+        <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--right">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--right ExplanationSection__leaf--surtout">
             <img
               src="/assets/tigre.png"
@@ -46,6 +51,11 @@ export const ExplanationSection = () => {
 
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--participe">
+          <img
+              src="/assets/monkey3.png"
+              className="ExplanationSection__leaf--participe__monkey"
+              alt=""
+            />
             <p>
               On vous demandera une participation (15 € max) qui couvrira la
               location du matos électricité pour avoir du bon son tout le
@@ -70,10 +80,11 @@ export const ExplanationSection = () => {
         </div>
       </div>
 
-      <div className="ExplanationSection__costumes">
+      {/* <div className="ExplanationSection__costumes">
         <div className="ExplanationSection__running-text">
           <Marquee direction="right">
-            Les amis de la jungle - inspirez-vous de notre séléction de pépites vestimentaires.
+            Les amis de la jungle - inspirez-vous de notre séléction de pépites
+            vestimentaires.
           </Marquee>
         </div>
         <CostumeSlider
@@ -91,10 +102,11 @@ export const ExplanationSection = () => {
         />
         <div className="ExplanationSection__running-text">
           <Marquee direction="right">
-            nature, primaire, animal, explorateur, végétal - Libérez l'animal sauvage qui est en vous.
+            nature, primaire, animal, explorateur, végétal - Libérez l'animal
+            sauvage qui est en vous.
           </Marquee>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -107,6 +107,8 @@
   padding-bottom: 140px;
   padding-top: 70px;
   z-index: 1;
+  position: relative;
+  overflow: hidden;
 
   @include small {
     transform: translate(0, 0);
@@ -118,6 +120,14 @@
     z-index: 0;
     padding-bottom: 70px;
   }
+}
+
+.ExplanationSection__leaf--que-prendre__monkey {
+  position: absolute;
+  top: 47px;
+  right: 60px;
+  width: 213px;
+  opacity: 0.86;
 }
 
 .ExplanationSection__leaf--surtout {
@@ -181,6 +191,7 @@
   padding-top: 45px;
   flex-shrink: 0;
   z-index: -1;
+  position: relative;
 
   @include small {
     padding: 24px;
@@ -188,6 +199,14 @@
     border-radius: 0;
     margin: 0;
   }
+}
+
+.ExplanationSection__leaf--participe__monkey {
+  position: absolute;
+  bottom: -5px;
+  right: 70px;
+  width: 140px;
+  opacity: 0.8;
 }
 
 .ExplanationSection__leaf--participe__shifted-text {

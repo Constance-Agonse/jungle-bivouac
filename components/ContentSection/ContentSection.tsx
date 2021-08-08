@@ -16,6 +16,11 @@ export const ContentSection = () => {
 
         <div className="ContentSection__leaf-container ContentSection__leaf-container--right">
           <div className="ContentSection__leaf ContentSection__leaf--right ContentSection__leaf--ou">
+            <img
+              src="/assets/tigre.png"
+              className="ContentSection__leaf--ou__tigre"
+              alt=""
+            />
             <h2>Où?</h2>
             <p>
               Sur le terrain du grand-père de Cléo, un terrain de plusieurs
@@ -35,6 +40,11 @@ export const ContentSection = () => {
 
         <div className="ContentSection__leaf-container ContentSection__leaf-container--left">
           <div className="ContentSection__leaf ContentSection__leaf--left ContentSection__leaf--comment">
+            <img
+              src="/assets/leaves.png"
+              className="ContentSection__leaf--comment__illustration"
+              alt=""
+            />
             <h2>Comment?</h2>
             <p>
               <b>Nous vous conseillons fortement de venir en voiture.</b>
