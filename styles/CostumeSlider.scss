@@ -1,6 +1,18 @@
 .CostumeSlider {
+  width: 100%;
+  overflow: hidden;
   .wrapper {
     display: flex;
-    overflow: hidden;
+  }
+  .CostumeSlider__image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+    img {
+      width: 100%;
+    }
   }
 }
