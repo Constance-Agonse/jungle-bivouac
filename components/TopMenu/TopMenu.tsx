@@ -7,7 +7,7 @@ export const TopMenu = () => {
   const onScroll = (e) => {
     setIsContentMenu(
       e.target.scrollingElement.scrollTop >
-        e.target.scrollingElement.clientHeight
+        e.target.scrollingElement.clientHeight - 20
     );
   };
   useEffect(() => {
@@ -23,10 +23,10 @@ export const TopMenu = () => {
       ref={ref}
     >
       <div className="TopMenu__inner">
-        <div className="TopMenu__item">COMMENT S’Y RENDRE?</div>
-        <div className="TopMenu__item">COMMENT ÇA MARCHE?</div>
-        <div className="TopMenu__item">LES AMIS DE LA JUNGLE</div>
-        <div className="TopMenu__item">CONTACT</div>
+        <a href="#content" className="TopMenu__item">COMMENT S’Y RENDRE?</a>
+        <a href="#explanation" className="TopMenu__item">COMMENT ÇA MARCHE?</a>
+        <a href="#friends" className="TopMenu__item">LES AMIS DE LA JUNGLE</a>
+        <a href="#contact" className="TopMenu__item">CONTACT</a>
       </div>
     </div>
   );

@@ -10,10 +10,18 @@ export default function Home() {
   return (
     <div className="container">
       <TopMenu />
-      <HomeSectionAlternative />
-      <ContentSection />
-      <ExplanationSection />
-      <LineUpSection />
+      <div id="home">
+        <HomeSectionAlternative />
+      </div>
+      <div id="content">
+        <ContentSection />
+      </div>
+      <div id="explanation">
+        <ExplanationSection />
+      </div>
+      <div id="lineup">
+        <LineUpSection />
+      </div>
     </div>
   );
 }
