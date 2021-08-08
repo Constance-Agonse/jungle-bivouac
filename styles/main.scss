@@ -1,27 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 
 @mixin small {
-  @media (max-width: 599px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
-@mixin medium {
-  @media (min-width: 900px) {
-    @content;
-  }
-}
+
 
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  // 0% {
+  //   background-position: 0% 50%;
+  // }
+  // 50% {
+  //   background-position: 100% 50%;
+  // }
+  // 100% {
+  //   background-position: 0% 50%;
+  // }
 }
 
 .HomeSectionAlternative__bg {

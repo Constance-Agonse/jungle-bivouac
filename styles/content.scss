@@ -1,14 +1,10 @@
 @mixin small {
-  @media (max-width: 599px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
-@mixin medium {
-  @media (min-width: 900px) {
-    @content;
-  }
-}
+
 
 .ContentSection {
   display: flex;
@@ -25,6 +21,7 @@
   @include small {
     width: 100%;
     margin: 0 16px;
+    padding-bottom: 32px;
     padding-top: 16px;
   }
 }

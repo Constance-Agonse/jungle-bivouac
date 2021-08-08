@@ -1,14 +1,10 @@
 @mixin small {
-  @media (max-width: 599px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
-@mixin medium {
-  @media (min-width: 900px) {
-    @content;
-  }
-}
+
 
 .ExplanationSection {
   display: flex;
@@ -103,7 +99,11 @@
 }
 
 .ExplanationSection__leaf--que-prendre {
-  background: linear-gradient(41.92deg, rgba(174, 216, 213, 0.7) 18.54%, rgba(74, 148, 202, 0.7) 73.98%);
+  background: linear-gradient(
+    41.92deg,
+    rgba(174, 216, 213, 0.7) 18.54%,
+    rgba(74, 148, 202, 0.7) 73.98%
+  );
   border-radius: 8px 426.959px 456.959px 606.959px;
   padding-top: 43px;
   width: calc(100% + 80px);
@@ -115,17 +115,23 @@
   z-index: 1;
 
   @include small {
+    transform: translate(0, 0);
     padding: 16px;
     margin-bottom: 0;
     width: 100%;
-    border-top-right-radius: 120px;
-    border-bottom-left-radius: 40px;
+    border-radius: 4px;
+    margin-right: 0;
+    z-index: 0;
   }
 }
 
 .ExplanationSection__leaf--surtout {
   width: 100%;
-  background: linear-gradient(121.76deg, #29978C 30.88%, rgb(69 216 0 / 58%) 104.05%);
+  background: linear-gradient(
+    121.76deg,
+    #29978c 30.88%,
+    rgb(69 216 0 / 58%) 104.05%
+  );
   border-radius: 326.959px 4px;
   padding-left: 83px;
   padding-top: 100px;
@@ -133,6 +139,7 @@
   width: calc(100% + 192px);
   transform: translate(-220px, -100px);
   flex-shrink: 0;
+  position: relative;
 
   @include small {
     padding: 16px;
@@ -140,17 +147,37 @@
     width: 100%;
     border-top-left-radius: 39px;
     border-bottom-right-radius: 110px;
+    transform: translate(0px, 0px);
+    margin-top: 40px;
+  }
+}
+
+.ExplanationSection__leaf-container--right__tigre {
+  position: absolute;
+  top: -94px;
+  right: 120px;
+  width: 250px;
+  @include small {
+    right: 32px;
   }
 }
 
 .ExplanationSection__leaf--surtout h2 {
   margin-left: 160px;
   margin-bottom: 40px;
+  @include small {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .ExplanationSection__leaf--participe {
   width: 100%;
-  background: linear-gradient(220.32deg, rgba(41, 151, 140, 0.7) -2%, rgb(65 76 159) 104.24%);
+  background: linear-gradient(
+    220.32deg,
+    rgba(41, 151, 140, 0.7) -2%,
+    rgb(65 76 159) 104.24%
+  );
   border-radius: 4px 267.5px;
   padding-bottom: 100px;
   transform: translate(0, -145px);
@@ -169,7 +196,7 @@
   margin-left: 50px;
 }
 
-.ExplanationSection__leaf--participe>p:first-child {
+.ExplanationSection__leaf--participe > p:first-child {
   font-weight: bold;
   margin-right: 180px;
 }

@@ -24,7 +24,7 @@ export const CostumeSlider = ({ imageUrls }: Props) => {
   }
 
   useEffect(() => {
-    runAnimation();
+    // runAnimation();
   }, []);
 
   const imageElements = imageUrls.map((imageUrl) => {
