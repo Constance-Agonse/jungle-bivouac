@@ -27,6 +27,16 @@ p {
   }
 }
 
+a {
+  color: white;
+  font-family: Lato;
+  font-weight: 100;
+  line-height: 32px;
+  @include small {
+    font-weight: normal;
+  }
+}
+
 li {
   font-family: Lato;
   font-weight: 100;
