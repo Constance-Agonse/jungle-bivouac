@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 
+@mixin small {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+
 h2 {
   font-family: Lato;
   font-weight: 700;
@@ -15,11 +22,17 @@ p {
   font-size: 20px;
   margin: 0;
   line-height: 32px;
+  @include small {
+    font-weight: normal;
+  }
 }
 
 li {
   font-family: Lato;
   font-weight: 100;
+  @include small {
+    font-weight: normal;
+  }
   color: white;
   font-size: 20px;
   margin-bottom: 8px;
@@ -27,3 +40,5 @@ li {
     margin-bottom: 0;
   }
 }
+
+
