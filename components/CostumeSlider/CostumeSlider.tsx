@@ -2,12 +2,27 @@ import React, { useEffect, useRef } from "react";
 
 type Props = {
   imageUrls: string[];
+  speed?: 'low' | 'medium' | 'high';
 }
 
-export const CostumeSlider = ({ imageUrls }: Props) => {
+export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
   const ref = useRef(null);
   const itemWidth = 70;
   const rowWidth = itemWidth * imageUrls.length;
+
+  let speedMs = 200;
+  switch (speed) {
+    case "high":
+      speedMs = 10;
+      break;
+    case "medium":
+      speedMs = 30;
+      break;
+    case "low":
+    default:
+      speedMs = 200;
+      break;
+  }
 
   const runAnimation = () => {
     let xPosition = 0;
@@ -18,7 +33,7 @@ export const CostumeSlider = ({ imageUrls }: Props) => {
           xPosition = 0;
         }
         ref.current.style = `transform: translate(${xPosition--}px, 0)`;
-      }, 10);
+      }, speedMs);
     }
     return () => { clearInterval(interval) }
   }

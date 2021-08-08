@@ -99,11 +99,9 @@
 }
 
 .ExplanationSection__leaf--que-prendre {
-  background: linear-gradient(
-    41.92deg,
-    rgba(174, 216, 213, 0.7) 18.54%,
-    rgba(74, 148, 202, 0.7) 73.98%
-  );
+  background: linear-gradient(41.92deg,
+      rgba(174, 216, 213, 0.7) 18.54%,
+      rgba(74, 148, 202, 0.7) 73.98%);
   border-radius: 8px 426.959px 456.959px 606.959px;
   padding-top: 43px;
   width: calc(100% + 80px);
@@ -127,11 +125,9 @@
 
 .ExplanationSection__leaf--surtout {
   width: 100%;
-  background: linear-gradient(
-    121.76deg,
-    #29978c 30.88%,
-    rgb(69 216 0 / 58%) 104.05%
-  );
+  background: linear-gradient(121.76deg,
+      #29978c 30.88%,
+      rgb(69 216 0 / 58%) 104.05%);
   border-radius: 326.959px 4px;
   padding-left: 83px;
   padding-top: 100px;
@@ -157,6 +153,7 @@
   top: -94px;
   right: 120px;
   width: 250px;
+
   @include small {
     right: 32px;
   }
@@ -165,6 +162,7 @@
 .ExplanationSection__leaf--surtout h2 {
   margin-left: 160px;
   margin-bottom: 40px;
+
   @include small {
     margin-right: 0;
     margin-left: 0;
@@ -173,11 +171,9 @@
 
 .ExplanationSection__leaf--participe {
   width: 100%;
-  background: linear-gradient(
-    220.32deg,
-    rgba(41, 151, 140, 0.7) -2%,
-    rgb(65 76 159) 104.24%
-  );
+  background: linear-gradient(220.32deg,
+      rgba(41, 151, 140, 0.7) -2%,
+      rgb(65 76 159) 104.24%);
   border-radius: 4px 267.5px;
   padding-bottom: 100px;
   transform: translate(0, -145px);
@@ -196,7 +192,7 @@
   margin-left: 50px;
 }
 
-.ExplanationSection__leaf--participe > p:first-child {
+.ExplanationSection__leaf--participe>p:first-child {
   font-weight: bold;
   margin-right: 180px;
 }
@@ -206,14 +202,17 @@
   font-size: 40px;
   letter-spacing: 0.045em;
   color: #feffd7;
-  background-color: #000;
   white-space: nowrap;
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 32px;
 }
 
 .ExplanationSection__running-image {
   width: 100%;
+}
+
+.ExplanationSection__costumes {
+  width: 100%;
+  background: linear-gradient(92.91deg, #90C2B5 21.31%, rgba(205, 89, 112, 0.65) 92.41%);
 }

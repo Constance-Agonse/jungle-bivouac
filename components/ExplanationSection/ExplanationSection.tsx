@@ -70,29 +70,30 @@ export const ExplanationSection = () => {
         </div>
       </div>
 
-      <div className="ExplanationSection__running-text">
-        <Marquee direction="left">
-          Les amis de la jungle - inspirez-vous de notre séléction de pépites
-          vestimentaires.
-        </Marquee>
-      </div>
-      <CostumeSlider
-        imageUrls={[
-          "/assets/costumes/1.png",
-          "/assets/costumes/2.png",
-          "/assets/costumes/3.png",
-          "/assets/costumes/4.png",
-          "/assets/costumes/5.png",
-          "/assets/costumes/6.png",
-          "/assets/costumes/7.png",
-          "/assets/costumes/8.png",
-        ]}
-      />
-      <div className="ExplanationSection__running-text">
-        <Marquee direction="left">
-          nature, primaire, animal, explorateur, végétal - Libérez l'animal
-          sauvage qui est en vous.
-        </Marquee>
+      <div className="ExplanationSection__costumes">
+        <div className="ExplanationSection__running-text">
+          <Marquee direction="right">
+            Les amis de la jungle - inspirez-vous de notre séléction de pépites vestimentaires.
+          </Marquee>
+        </div>
+        <CostumeSlider
+          imageUrls={[
+            "/assets/costumes/1.png",
+            "/assets/costumes/2.png",
+            "/assets/costumes/3.png",
+            "/assets/costumes/4.png",
+            "/assets/costumes/5.png",
+            "/assets/costumes/6.png",
+            "/assets/costumes/7.png",
+            "/assets/costumes/8.png",
+          ]}
+          speed="medium"
+        />
+        <div className="ExplanationSection__running-text">
+          <Marquee direction="right">
+            nature, primaire, animal, explorateur, végétal - Libérez l'animal sauvage qui est en vous.
+          </Marquee>
+        </div>
       </div>
     </div>
   );
