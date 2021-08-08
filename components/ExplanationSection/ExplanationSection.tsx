@@ -38,24 +38,20 @@ export const ExplanationSection = () => {
 
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--participe">
-
             <p>
               On vous demandera une participation (15 € max) qui couvrira la location du matos électricité pour avoir du bon son tout le week-end.
             </p>
-
-            <p>
-              Chacun sera invité à veiller à la propreté du lieu qui est un terrain que la famille de Cléo utilise régulièrement.
-
-
-            </p>
-            <p>
-              Il n'y a pas de bâtiment sur le terrain, donc pas de toillettes, ça sera full nature et on organisera des petits espaces dédiés pour poser sa petite pêche tranquil.
-
-            </p>
-            <p>
-              Une douche est à disposition sur la plage du lac du Bourdon, à 5 minutes à pied.
-
-            </p>
+            <div className="ExplanationSection__leaf--participe__shifted-text">
+              <p>
+                Chacun sera invité à veiller à la propreté du lieu qui est un terrain que la famille de Cléo utilise régulièrement.
+              </p>
+              <p>
+                Il n'y a pas de bâtiment sur le terrain, donc pas de toillettes, ça sera full nature et on organisera des petits espaces dédiés pour poser sa petite pêche tranquil.
+              </p>
+              <p>
+                Une douche est à disposition sur la plage du lac du Bourdon, à 5 minutes à pied.
+              </p>
+            </div>
           </div>
         </div>
       </div>
