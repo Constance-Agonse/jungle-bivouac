@@ -7,11 +7,7 @@ export const ExplanationSection = () => {
       <div className="ExplanationSection__tree">
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--que-prendre">
-            <img
-              src="/assets/monkey1.png"
-              className="ExplanationSection__leaf--que-prendre__monkey"
-              alt=""
-            />
+           
             <h2>Que prendre avec vous?</h2>
             <ul>
               <li>Sac de couchage</li>
@@ -29,7 +25,7 @@ export const ExplanationSection = () => {
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--right">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--right ExplanationSection__leaf--surtout">
             <img
-              src="/assets/tigre.png"
+              src="/assets/dancingbb.png"
               className="ExplanationSection__leaf-container--right__tigre"
               alt=""
             />
