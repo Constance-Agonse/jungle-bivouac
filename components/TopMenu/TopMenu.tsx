@@ -29,7 +29,7 @@ export const TopMenu = () => {
         <a href="#costumes" className="TopMenu__item">LES AMIS DE LA JUNGLE</a>
         <a href="#footer" className="TopMenu__item">CONTACT</a>
         <Button
-          text="Remplis le questionnaire"
+          text="Remplir le questionnaire"
           onClick={() => {
             window.open('https://bit.ly/3AsA8Cs');
           }}

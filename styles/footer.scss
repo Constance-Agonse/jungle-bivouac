@@ -1,3 +1,41 @@
 .FooterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.FooterSection__deuxorga {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.FooterSection__organisateur {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.FooterSection__organisateur--info{
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterSection__organisateur p {
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterSection p {
     color: black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.FooterSection__organisateur img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
 }

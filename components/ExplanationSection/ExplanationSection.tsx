@@ -51,7 +51,7 @@ export const ExplanationSection = () => {
               className="ExplanationSection__leaf--participe__monkey"
               alt=""
             />
-            <p>
+            <p className='ExplanationSection__leaf--participe--bold'>
               On vous demandera une participation (15 € max) qui couvrira la
               location du matos électricité pour avoir du bon son tout le
               week-end.
