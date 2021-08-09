@@ -7,11 +7,7 @@
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 30px;
-  //background: linear-gradient(90.96deg, #1E1F4D 18.18%, rgba(241, 10, 79, 0.65) 92.15%);
 }
-
-Merci de remplir  le questionnaire  et confirmer ta présence
 
 .CostumesSection__running-image {
   width: 100%;
@@ -19,7 +15,9 @@ Merci de remplir  le questionnaire  et confirmer ta présence
 
 .CostumesSection__costumes {
   width: 100%;
-  background: linear-gradient(92.91deg,
-      #90c2b5 21.31%,
-      rgba(205, 89, 112, 0.65) 92.41%);
+  background: linear-gradient(
+    92.91deg,
+    #90c2b5 21.31%,
+    rgba(205, 89, 112, 0.65) 92.41%
+  );
 }

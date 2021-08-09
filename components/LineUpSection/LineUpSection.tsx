@@ -1,47 +1,84 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ResponsiveContext } from "../../pages";
+import { FaFacebookF } from "react-icons/fa";
+import { Button } from "../Button/Button";
 
 const djs = [
   {
-    name: 'Lou Ravi',
-    scLink: undefined
-  }, {
-    name: 'Walid',
-    scLink: undefined
+    name: "Lou Ravi",
+    scLink: undefined,
+    fb: "https://www.facebook.com/clvs.rvn",
   },
   {
-    name: 'Paul-Sinh',
-    scLink: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289925252&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+    name: "Walid",
+    scLink: undefined,
+    fb: "https://www.facebook.com/skouri",
   },
   {
-    name: 'Human Connections',
-    scLink: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889885666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+    name: "Paul-Sinh",
+    scLink:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289925252&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+    scLinkMobile:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289925252&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    fb: "https://www.facebook.com/BadBalance",
   },
-]
+  {
+    name: "Human Connections",
+    scLink:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889885666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+    scLinkMobile:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889885666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    fb: "https://www.facebook.com/sergeychuvayev/",
+  },
+];
 
 export const LineUpSection = () => {
+  const documentWidth = useContext(ResponsiveContext);
+
   return (
     <div className="LineUpSection">
       <div className="LineUpSection__content">
-        <div className="LineUpSection__title">
-          Lineup
-        </div>
+        <div className="LineUpSection__title">Lineup</div>
         <div className="LineUpSection__lineup">
           {djs.map((dj) => (
             <div className="LineUpSection__lineup__dj">
               <div className="LineUpSection__lineup__name">
-                {dj.name}
+                <div>{dj.name}</div>
+                <Button
+                  className="LineUpSection__lineup__name__social"
+                  text={<FaFacebookF />}
+                  onClick={() => {
+                    window.open(dj.fb)
+                  }}
+                />
               </div>
               {dj.scLink && (
                 <div className="LineUpSection__lineup__sc">
-                  <iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay" src={dj.scLink}></iframe>
+                  {documentWidth <= 1024 ? (
+                    <iframe
+                      width="100%"
+                      height="166"
+                      scrolling="no"
+                      frameBorder="no"
+                      allow="autoplay"
+                      src={dj.scLinkMobile}
+                    ></iframe>
+                  ) : (
+                    <iframe
+                      width="100%"
+                      height="166"
+                      scrolling="no"
+                      frameBorder="no"
+                      allow="autoplay"
+                      src={dj.scLink}
+                    ></iframe>
+                  )}
                 </div>
               )}
             </div>
           ))}
         </div>
-        {/* <div className="LineUpSection__background">
-        <div className="LineUpSection__background__img" />
-      </div> */}
       </div>
-    </div>)
-}
+    </div>
+  );
+};

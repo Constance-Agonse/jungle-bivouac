@@ -1,9 +1,19 @@
+@mixin small {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 .CostumeSlider {
   width: 100%;
   overflow: hidden;
 
   .wrapper {
     display: flex;
+    @include small {
+      overflow: auto;
+      overflow-y: hidden;
+    }
   }
 }
 

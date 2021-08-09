@@ -95,6 +95,7 @@
     width: 100%;
     border-radius: 4px 4px 0px 0px;
     padding-top: 32px;
+    padding-bottom: 60px;
   }
 }
 
@@ -119,6 +120,9 @@
   top: -83px;
   right: 140px;
   width: 220px;
+  @include small() {
+    right: 10px;
+  }
 }
 
 

@@ -12,6 +12,12 @@
   }
 }
 
+@mixin small {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 .LineUpSection {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -20,11 +26,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 24px;
 }
 
 .LineUpSection__content {
   width: 820px;
   margin: 32px 0;
+  @include small {
+    width: 100%;
+  }
 }
 
 .LineUpSection__title {
@@ -50,11 +60,13 @@
 .LineUpSection__background {
   width: 440px;
   height: 60vh;
-  background: linear-gradient(230deg,
-      #2da889,
-      #612da8,
-      rgb(35, 219, 28),
-      rgb(255, 255, 255));
+  background: linear-gradient(
+    230deg,
+    #2da889,
+    #612da8,
+    rgb(35, 219, 28),
+    rgb(255, 255, 255)
+  );
   background-size: 400% 400%;
   animation: grad 10s ease infinite;
   border-radius: 4px;
@@ -72,11 +84,17 @@
 
 .LineUpSection__lineup {
   min-width: 820px;
+  @include small {
+    min-width: 100%;
+  }
 }
 
 .LineUpSection__lineup__name {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   // font-weight: 100;
 }
 
@@ -86,4 +104,9 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.LineUpSection__lineup__name__social {
+  padding: 16px;
+  width: 49px;
 }

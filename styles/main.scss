@@ -46,6 +46,10 @@
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
+  @include small {
+    top: 0;
+    bottom: initial;
+  }
 }
 
 .HomeSectionAlternative__bg {
@@ -65,13 +69,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  a {
+    text-decoration: none;
+  }
   @include small {
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 16px;
     box-sizing: border-box;
-    padding-top: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 
@@ -105,6 +114,10 @@
     font-size: 40px;
     -webkit-text-stroke: none;
     color: #ffffff;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

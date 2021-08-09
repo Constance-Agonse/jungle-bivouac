@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react";
 
 type Props = {
   imageUrls: string[];
-  speed?: 'low' | 'medium' | 'high';
-}
+  speed?: "low" | "medium" | "high";
+};
 
-export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
+export const CostumeSlider = ({ imageUrls, speed = "medium" }: Props) => {
   const ref = useRef(null);
   const itemWidth = 160;
   const rowWidth = itemWidth * imageUrls.length;
@@ -35,8 +35,10 @@ export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
         ref.current.style = `transform: translate(${xPosition--}px, 0)`;
       }, speedMs);
     }
-    return () => { clearInterval(interval) }
-  }
+    return () => {
+      clearInterval(interval);
+    };
+  };
 
   useEffect(() => {
     //runAnimation();
@@ -44,18 +46,21 @@ export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
 
   const imageElements = imageUrls.map((imageUrl) => {
     return (
-      <div className="CostumeSlider__image-item" style={{ width: itemWidth }}>
+      <div
+        key={imageUrl}
+        className="CostumeSlider__image-item"
+        style={{ width: itemWidth }}
+      >
         <div className="CostumeSlider__image-item__img">
           <img key={imageUrl} src={imageUrl} />
           <div className="CostumeSlider__image-shadow" />
         </div>
       </div>
-    )
+    );
   });
 
   return (
     <div className="CostumeSlider">
-
       <div className="wrapper" ref={ref}>
         {imageElements}
         {imageElements}
@@ -63,5 +68,5 @@ export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
         {imageElements}
       </div>
     </div>
-  )
-}
+  );
+};
