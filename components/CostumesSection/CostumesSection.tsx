@@ -6,7 +6,7 @@ export const CostumesSection = () => {
   return (
     <div className="CostumesSection__costumes">
       <div className="CostumesSection__running-text">
-        <Marquee direction="right">
+        <Marquee direction="left">
           Les amis de la jungle - inspirez-vous de notre séléction de pépites
           vestimentaires.
         </Marquee>
@@ -21,14 +21,14 @@ export const CostumesSection = () => {
           "/assets/Newcostumes/6.png",
           "/assets/Newcostumes/7.png",
           "/assets/Newcostumes/8.png",
-          "/assets/Newcostumes/9.png 16-01-50-791.png",
+          // "/assets/Newcostumes/9.png 16-01-50-791.png",
           "/assets/Newcostumes/10.png",
           "/assets/Newcostumes/11.png",
         ]}
         speed="medium"
       />
       <div className="CostumesSection__running-text">
-        <Marquee direction="right">
+        <Marquee direction="left">
           nature, primaire, animal, explorateur, végétal - Libérez l'animal
           sauvage qui est en vous.
         </Marquee>

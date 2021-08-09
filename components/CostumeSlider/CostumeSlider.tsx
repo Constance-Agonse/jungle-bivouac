@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
+import { ResponsiveContext } from "../../pages";
 
 type Props = {
   imageUrls: string[];
@@ -9,6 +10,7 @@ export const CostumeSlider = ({ imageUrls, speed = "medium" }: Props) => {
   const ref = useRef(null);
   const itemWidth = 160;
   const rowWidth = itemWidth * imageUrls.length;
+  const docWidth = useContext(ResponsiveContext);
 
   let speedMs = 200;
   switch (speed) {
@@ -41,8 +43,10 @@ export const CostumeSlider = ({ imageUrls, speed = "medium" }: Props) => {
   };
 
   useEffect(() => {
-    //runAnimation();
-  }, []);
+    if (docWidth >= 1024) {
+      runAnimation();
+    }
+  }, [docWidth]);
 
   const imageElements = imageUrls.map((imageUrl) => {
     return (

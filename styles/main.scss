@@ -100,6 +100,10 @@
   }
   &--underlined {
     position: relative;
+    line-height: 80px;
+    @include small {
+      line-height: 46px;
+    }
     &::after {
       content: "";
       left: 0;

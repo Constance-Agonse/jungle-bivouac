@@ -7,7 +7,7 @@ export const ExplanationSection = () => {
       <div className="ExplanationSection__tree">
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--que-prendre">
-           
+
             <h2>Que prendre avec vous?</h2>
             <ul>
               <li>Sac de couchage</li>
@@ -46,11 +46,6 @@ export const ExplanationSection = () => {
 
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--participe">
-          <img
-              src="/assets/monkey3.png"
-              className="ExplanationSection__leaf--participe__monkey"
-              alt=""
-            />
             <p className='ExplanationSection__leaf--participe--bold'>
               On vous demandera une participation (15 € max) qui couvrira la
               location du matos électricité pour avoir du bon son tout le
@@ -75,7 +70,7 @@ export const ExplanationSection = () => {
         </div>
       </div>
 
-       
+
     </div>
   );
 };

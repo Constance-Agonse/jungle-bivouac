@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Head from 'next/head'
 
 import { HomeSectionAlternative } from "../components/HomeSectionAlternative/HomeSectionAlternative";
 import { ContentSection } from "../components/ContentSection/ContentSection";
@@ -18,6 +19,10 @@ export default function Home() {
 
   return (
     <ResponsiveContext.Provider value={width}>
+      <Head>
+        <title>Jungle Bivouac Camping</title>
+        <meta property="og:title" content="Jungle Bivouac Camping" key="title" />
+      </Head>
       <div className="container">
         <TopMenu />
         <div id="home">
@@ -32,9 +37,9 @@ export default function Home() {
         <div id="costumes">
           <CostumesSection />
         </div>
-        <div id="lineup">
+        {/* <div id="lineup">
           <LineUpSection />
-        </div>
+        </div> */}
         <div id="footer">
           <FooterSection />
         </div>
