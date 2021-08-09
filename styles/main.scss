@@ -41,7 +41,7 @@
   font-family: Lato;
   font-size: 40px;
   letter-spacing: 0.045em;
-  color: #feffd7;
+  color: #ffffff;
   white-space: nowrap;
   width: 100%;
   font-weight: 700;
@@ -79,12 +79,12 @@
   font-family: Lato;
   font-weight: bold;
   color: transparent;
-  -webkit-text-stroke: 1px #feffd7;
+  -webkit-text-stroke: 1px #fdfdfd;
   font-size: 80px;
   text-transform: uppercase;
   text-align: right;
   &--logo {
-    -webkit-text-stroke: 1px #feffd7;
+    -webkit-text-stroke: 1px #ffffff;
     @include small {
       font-size: 40px;
     }
@@ -98,13 +98,13 @@
       bottom: -4px;
       width: 100%;
       height: 1px;
-      background-color: #feffd7;
+      background-color: #ffffff;
     }
   }
   @include small {
     font-size: 40px;
     -webkit-text-stroke: none;
-    color: #feffd7;
+    color: #ffffff;
   }
 }
 
@@ -145,9 +145,11 @@
   width: 100%;
   &.TopMenu--content {
     .TopMenu__item {
-      color: #363636;
+      color: #4b5fa3;
     }
   }
+  padding: 0 96px;
+  box-sizing: border-box;
 }
 
 .TopMenu__inner {
@@ -161,7 +163,7 @@
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   cursor: pointer;
   transition: opacity ease-in-out 200ms;
@@ -182,4 +184,8 @@
       width: 100%;
     }
   }
+}
+
+.TopMenu__item-button {
+  margin-left: auto;
 }

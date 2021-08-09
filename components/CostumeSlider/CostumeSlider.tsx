@@ -7,7 +7,7 @@ type Props = {
 
 export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
   const ref = useRef(null);
-  const itemWidth = 70;
+  const itemWidth = 160;
   const rowWidth = itemWidth * imageUrls.length;
 
   let speedMs = 200;
@@ -39,13 +39,16 @@ export const CostumeSlider = ({ imageUrls, speed = 'medium' }: Props) => {
   }
 
   useEffect(() => {
-    // runAnimation();
+    //runAnimation();
   }, []);
 
   const imageElements = imageUrls.map((imageUrl) => {
     return (
       <div className="CostumeSlider__image-item" style={{ width: itemWidth }}>
-        <img key={imageUrl} src={imageUrl} />
+        <div className="CostumeSlider__image-item__img">
+          <img key={imageUrl} src={imageUrl} />
+          <div className="CostumeSlider__image-shadow" />
+        </div>
       </div>
     )
   });

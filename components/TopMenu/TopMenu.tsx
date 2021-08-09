@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import cx from "classnames";
+import { Button } from "../Button/Button";
 
 export const TopMenu = () => {
   const ref = useRef(null);
@@ -7,7 +8,7 @@ export const TopMenu = () => {
   const onScroll = (e) => {
     setIsContentMenu(
       e.target.scrollingElement.scrollTop >
-        e.target.scrollingElement.clientHeight - 20
+      e.target.scrollingElement.clientHeight - 20
     );
   };
   useEffect(() => {
@@ -25,8 +26,15 @@ export const TopMenu = () => {
       <div className="TopMenu__inner">
         <a href="#content" className="TopMenu__item">COMMENT S’Y RENDRE?</a>
         <a href="#explanation" className="TopMenu__item">COMMENT ÇA MARCHE?</a>
-        <a href="#friends" className="TopMenu__item">LES AMIS DE LA JUNGLE</a>
-        <a href="#contact" className="TopMenu__item">CONTACT</a>
+        <a href="#costumes" className="TopMenu__item">LES AMIS DE LA JUNGLE</a>
+        <a href="#footer" className="TopMenu__item">CONTACT</a>
+        <Button
+          text="Remplis le questionnaire"
+          onClick={() => {
+            window.open('https://bit.ly/3AsA8Cs');
+          }}
+          className="TopMenu__item-button"
+        />
       </div>
     </div>
   );

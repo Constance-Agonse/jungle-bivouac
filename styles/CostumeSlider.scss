@@ -1,18 +1,35 @@
 .CostumeSlider {
   width: 100%;
   overflow: hidden;
+
   .wrapper {
     display: flex;
   }
-  .CostumeSlider__image-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 0 8px;
-    box-sizing: border-box;
-    img {
-      width: 100%;
-    }
+}
+
+.CostumeSlider__image-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  img {
+    width: 130px;
   }
+}
+
+.CostumeSlider__image-shadow {
+  width: 100%;
+  height: 31px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.196) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  opacity: .5;
+}
+
+.CostumeSlider__image-item__img {
+  position: relative;
 }
