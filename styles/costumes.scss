@@ -1,3 +1,9 @@
+@mixin small {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 .CostumesSection__running-text {
   font-family: Lato;
   font-size: 40px;
@@ -7,6 +13,9 @@
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
+  @include small {
+    font-size: 16px;
+  }
 }
 
 .CostumesSection__running-image {

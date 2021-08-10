@@ -3,10 +3,22 @@
     @content;
   }
 }
+.FooterSection p{
+  color :black;
+  margin-bottom: 16px;
+}
+
+.FooterSection__part{
+  margin-bottom: 80px;
+  @include small {
+    margin-bottom: 40px;
+  }
+
+}
 
 .FooterSection {
   margin: 64px auto;
-  max-width: 620px;
+  max-width: 720px;
   text-align: center;
   @include small {
     padding: 0 24px;
@@ -27,6 +39,12 @@
   font-size: 24px;
   margin-bottom: 32px;
   line-height: 32px;
+  &.FoooterSection__title--red {
+    color: #d55379;
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 16px;
+  }
 }
 
 .FooterSection__organisateur {

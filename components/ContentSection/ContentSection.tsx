@@ -27,14 +27,15 @@ export const ContentSection = () => {
               hectares situé à 5 minutes à pied du joli <b>lac du Bourdon</b>.
             </p>
             <p>
-              <b>
-                Google maps:{" "}
+              
+                <b>Google maps:{" "}
                 <a target="_blank" href="https://goo.gl/maps/V2feNCPbERLxGo3T9">
                   <b>La Calanque, Saint-Fargeau</b>
                 </a>
               </b>
             </p>
             <p>A deux heures de Paris en voiture.</p>
+            <p>Précisions à venir.</p>
           </div>
         </div>
 
@@ -47,28 +48,33 @@ export const ContentSection = () => {
             />
             <h2>Comment?</h2>
             <p>
-              <b>Nous vous conseillons fortement de venir en voiture.</b>
+            <b>Nous vous conseillons fortement de venir en voiture.</b>
               <br />
               Ca simplifie la logistique mais surtout ça sera plus simple pour
               transporter vos victuailles. (Il faudra arriver avec déjà bouffe
               et boissons pour tout le week-end.)
             </p>
             <p>
-              Si vous voulez venir{" "}
+            Si vous voulez venir{" "}
               <a
                 target="_blank"
                 href="https://www.thetrainline.com/book/results?origin=11d9556489c5cb692f93fcef327abac1&destination=9ca96ffd97917c38cbfceb2ab7cdb59c&outwardDate=2021-08-27T07%3A15%3A00&outwardDateType=departAfter&journeySearchType=single&passengerDiscountCards%5B%5D=c61c7d4b4052a980aee59dc6ada0d421e1e1b4fb&passengers%5B%5D=1994-08-08%7C2d45383e-3407-4cf3-976a-4e00df84e0c1&selectedOutward=wue1Wk80Ca0%3D%3Ag7DY8JRuJxo%3D%3AStandard"
               >
                 <b>en train, de Bercy à Briare</b>
               </a>
-              . environ 1h30. Ensuite il y a plusieurs options:
+              . 
+              <p>17:02 → 18:39</p> 
+              <p>18:02 → 19:40</p>
+
+              Ensuite il y a plusieurs options:
             </p>
             <ul>
-              <li>2h de vélo par des petites routes boisées.</li>
-              <li>
-                Pour les autres, on pourra auto-organiser une navette, le mieux
+            <li>
+                On pourra auto-organiser une navette, le mieux
                 serait de grouper les arrivées en train.
               </li>
+              <li> Ou 2h de vélo par des petites routes boisées pour les plus motivés.</li>
+              
             </ul>
           </div>
         </div>

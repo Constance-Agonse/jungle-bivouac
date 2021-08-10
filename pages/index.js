@@ -37,9 +37,9 @@ export default function Home() {
         <div id="costumes">
           <CostumesSection />
         </div>
-        {/* <div id="lineup">
+        <div id="lineup">
           <LineUpSection />
-        </div> */}
+        </div>
         <div id="footer">
           <FooterSection />
         </div>

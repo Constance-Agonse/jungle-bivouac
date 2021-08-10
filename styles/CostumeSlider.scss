@@ -13,6 +13,7 @@
     @include small {
       overflow: auto;
       overflow-y: hidden;
+      height: 200px;
     }
   }
 }

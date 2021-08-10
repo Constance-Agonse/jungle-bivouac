@@ -19,7 +19,7 @@
 }
 
 .LineUpSection {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(118.47deg, #504A95 1.53%, #508BC0 97.16%);
   background-size: 400% 400%;
   // animation: gradient 15s ease infinite;
   display: flex;
@@ -27,13 +27,34 @@
   justify-content: center;
   flex-direction: column;
   padding: 0 24px;
+  color: white;
 }
 
 .LineUpSection__content {
-  width: 820px;
+  width: 400px;
   margin: 32px 0;
+  position: relative;
+
+  transform: translate(100px, 0);
+
   @include small {
     width: 100%;
+    transform: translate(0, 0);
+  }
+}
+
+.LineUpSection__content__cleo-wants {
+  width: 200px;
+  position: absolute;
+  left: -220px;
+  top: 20px;
+
+  @include small {
+    z-index: -1;
+    left: -6px;
+    opacity: 0.3;
+    top: 0;
+    width: 230px;
   }
 }
 
@@ -41,6 +62,11 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 32px;
+  margin-left: -40px;
+
+  @include small {
+    margin-left: 0;
+  }
 }
 
 @keyframes grad {
@@ -60,13 +86,7 @@
 .LineUpSection__background {
   width: 440px;
   height: 60vh;
-  background: linear-gradient(
-    230deg,
-    #2da889,
-    #612da8,
-    rgb(35, 219, 28),
-    rgb(255, 255, 255)
-  );
+  background: linear-gradient(118.47deg, #504A95 1.53%, #508BC0 97.16%);
   background-size: 400% 400%;
   animation: grad 10s ease infinite;
   border-radius: 4px;
@@ -74,19 +94,12 @@
   display: flex;
 }
 
-.LineUpSection__background__img {
-  background-image: url("https://dg31sz3gwrwan.cloudfront.net/fanart/75402/224201-0-q80.jpg");
-  mix-blend-mode: difference;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
 
 .LineUpSection__lineup {
-  min-width: 820px;
-  @include small {
-    min-width: 100%;
-  }
+  // min-width: 820px;
+  // @include small {
+  //   min-width: 100%;
+  // }
 }
 
 .LineUpSection__lineup__name {
@@ -100,6 +113,9 @@
 
 .LineUpSection__lineup__dj {
   margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
@@ -109,4 +125,29 @@
 .LineUpSection__lineup__name__social {
   padding: 16px;
   width: 49px;
+}
+
+
+.LineUpSection__lineup__dj__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.LineUpSection__lineup__dj__icons__button {
+  outline: 0;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: all ease 200ms;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
 }

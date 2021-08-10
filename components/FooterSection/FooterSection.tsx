@@ -21,8 +21,23 @@ export const FooterSection = () => {
   return (
     <div className="FooterSection">
       <div className="FooterSection__part">
+        <div className="FooterSection__title FoooterSection__title--red">
+          Cet évènement est privé, merci de ne pas partager ce lien publiquement.
+        </div>
         <div className="FooterSection__title">
-          Contactez-nous sur facebook ou par téléphone
+          Merci de confirmer votre présence et de nous donner le plus d'infos possibles pour que nous organisions tout bien.
+        </div>
+        <Button
+          text="Remplir le questionnaire"
+          onClick={() => {
+            window.open('https://bit.ly/3AsA8Cs');
+          }}
+          className="TopMenu__item-button"
+        />
+      </div>
+      <div className="FooterSection__part">
+        <div className="FooterSection__title">
+          Si vous avez des questions
         </div>
         <div className="FooterSection__deuxorga">
           {organisateurs.map((organisateur) => (
@@ -43,18 +58,7 @@ export const FooterSection = () => {
           ))}
         </div>
       </div>
-      <div className="FooterSection__part">
-        <div className="FooterSection__title">
-          Merci de remplir le questionnaire en nous donnant le plus d'infos possibles pour que nous organisions tout bien.
-        </div>
-        <Button
-          text="Remplir le questionnaire"
-          onClick={() => {
-            window.open('https://bit.ly/3AsA8Cs');
-          }}
-          className="TopMenu__item-button"
-        />
-      </div>
+
     </div>
   )
 }

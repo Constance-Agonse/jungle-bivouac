@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ResponsiveContext } from "../../pages";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaSoundcloud } from "react-icons/fa";
 import { Button } from "../Button/Button";
 
 const djs = [
@@ -11,23 +11,17 @@ const djs = [
   },
   {
     name: "Walid",
-    scLink: undefined,
+    scLink: "https://soundcloud.app.goo.gl/EN5ei",
     fb: "https://www.facebook.com/skouri",
   },
   {
     name: "Paul-Sinh",
-    scLink:
-      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289925252&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-    scLinkMobile:
-      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289925252&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    scLink: "https://soundcloud.app.goo.gl/8tMtR5aev1AN73gR6",
     fb: "https://www.facebook.com/BadBalance",
   },
   {
     name: "Human Connections",
-    scLink:
-      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889885666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-    scLinkMobile:
-      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889885666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    scLink: "https://soundcloud.com/sergeyhumanconnections",
     fb: "https://www.facebook.com/sergeychuvayev/",
   },
 ];
@@ -38,43 +32,37 @@ export const LineUpSection = () => {
   return (
     <div className="LineUpSection">
       <div className="LineUpSection__content">
+        <img className="LineUpSection__content__cleo-wants" src="/assets/cleowants.png" alt="" />
         <div className="LineUpSection__title">Lineup</div>
         <div className="LineUpSection__lineup">
           {djs.map((dj) => (
             <div className="LineUpSection__lineup__dj">
-              <div className="LineUpSection__lineup__name">
-                <div>{dj.name}</div>
-                <Button
-                  className="LineUpSection__lineup__name__social"
-                  text={<FaFacebookF />}
-                  onClick={() => {
-                    window.open(dj.fb)
-                  }}
-                />
+              <div className="LineUpSection__lineup__dj__name">
+                {dj.name}
               </div>
-              {dj.scLink && (
-                <div className="LineUpSection__lineup__sc">
-                  {documentWidth <= 1024 ? (
-                    <iframe
-                      width="100%"
-                      height="166"
-                      scrolling="no"
-                      frameBorder="no"
-                      allow="autoplay"
-                      src={dj.scLinkMobile}
-                    ></iframe>
-                  ) : (
-                    <iframe
-                      width="100%"
-                      height="166"
-                      scrolling="no"
-                      frameBorder="no"
-                      allow="autoplay"
-                      src={dj.scLink}
-                    ></iframe>
-                  )}
-                </div>
-              )}
+              <div className="LineUpSection__lineup__dj__style"></div>
+              <div className="LineUpSection__lineup__dj__icons">
+                {dj.scLink && (
+                  <button
+                    onClick={() => {
+                      window.open(dj.scLink);
+                    }}
+                    className="LineUpSection__lineup__dj__icons__button"
+                  >
+                    <FaSoundcloud color="white" />
+                  </button>
+                )}
+                {dj.fb && (
+                  <button
+                    onClick={() => {
+                      window.open(dj.fb);
+                    }}
+                    className="LineUpSection__lineup__dj__icons__button"
+                  >
+                    <FaFacebookF color="white" />
+                  </button>
+                )}
+              </div>
             </div>
           ))}
         </div>

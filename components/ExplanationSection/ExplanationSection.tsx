@@ -14,10 +14,12 @@ export const ExplanationSection = () => {
               <li>Tente</li>
               <li>Affaires chaudes</li>
               <li>Maillot de bain</li>
-              <li>Vos habits de lumière</li>
+              <li>Habits de lumière</li>
               <li>Écocup et paire de couverts</li>
               <li>Batteries externes pour téléphones</li>
-              <li>Votre glacière pour les bières</li>
+              <li>Glacière pour les bières</li>
+              <li>PQ</li>
+              <li>...</li>
             </ul>
           </div>
         </div>
@@ -47,9 +49,8 @@ export const ExplanationSection = () => {
         <div className="ExplanationSection__leaf-container ExplanationSection__leaf-container--left">
           <div className="ExplanationSection__leaf ExplanationSection__leaf--left ExplanationSection__leaf--participe">
             <p className='ExplanationSection__leaf--participe--bold'>
-              On vous demandera une participation (15 € max) qui couvrira la
-              location du matos électricité pour avoir du bon son tout le
-              week-end.
+              Une participation volontaire est la bienvenue afin couvrir nos frais de loc du groupe éléctrogène pour le son. On ne dépassera pas la barre des 15 €.
+
             </p>
             <div className="ExplanationSection__leaf--participe__shifted-text">
               <p>
