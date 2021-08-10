@@ -10,7 +10,7 @@ const djs = [
     fb: "https://www.facebook.com/clvs.rvn",
   },
   {
-    name: "Walid",
+    name: "Wasko",
     scLink: "https://soundcloud.app.goo.gl/EN5ei",
     fb: "https://www.facebook.com/skouri",
   },

@@ -21,7 +21,11 @@ export default function Home() {
     <ResponsiveContext.Provider value={width}>
       <Head>
         <title>Jungle Bivouac Camping</title>
-        <meta property="og:title" content="Jungle Bivouac Camping" key="title" />
+        <meta property="og:title" content="Jungle Bivouac" />
+        <meta property="og:url" content="https://www.junglebivouac.fr/" />
+        <meta property="og:description" content="Il est l’heure pour les amis de la jungle de se retrouver. 48h nichés au milieu de la forêt, espace parfait pour papillonner." />
+        <meta property="og:image" content="https://www.junglebivouac.fr/assets/ogimg.png" />
+        <meta property="og:type" content="article" />
       </Head>
       <div className="container">
         <TopMenu />
