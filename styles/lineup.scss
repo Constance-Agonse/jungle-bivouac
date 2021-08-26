@@ -30,6 +30,19 @@
   color: white;
 }
 
+.LineUpSection__playlist {
+  margin-left: -200px;
+  width: 600px;
+  margin-top: 32px;
+
+  @include small {
+    width: calc(100% + 48px);
+    margin-left: 0;
+    margin: 32px -24px;
+    margin-bottom: -34px;
+  }
+}
+
 .LineUpSection__content {
   width: 400px;
   margin: 32px 0;
