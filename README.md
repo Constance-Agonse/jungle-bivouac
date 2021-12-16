@@ -1,1 +1,14 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Jungle Bivouac
+
+A small website to promote a private party for friends
+
+
+## Tech Stack
+Next.js application with TypeScript & SCSS
+
+
+
+
+## Demo
+
+https://www.junglebivouac.fr/
