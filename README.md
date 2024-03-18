@@ -11,4 +11,4 @@ Next.js application with TypeScript & SCSS
 
 ## Demo
 
-https://www.junglebivouac.fr/
+[https://www.junglebivouac.fr/](https://jungle-bivouac.vercel.app/)https://jungle-bivouac.vercel.app/
